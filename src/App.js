@@ -1,18 +1,13 @@
 import React,{Component} from 'react';
-
+import Projects from './Projects';
 class App extends Component{
-    
-    constructor(){
-        super();
-        this.state = {displayBio: false};
-        this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
-    }
-
-    toggleDisplayBio(){
+   state = {displayBio:false};
+   
+    toggleDisplayBio = () => {
         this.setState({displayBio: !this.state.displayBio});
     }
 
-    render(){
+    render() {
         
         
         return (
@@ -34,6 +29,8 @@ class App extends Component{
                         </div>
                     )
                 }
+                <hr />
+                <Projects />
             </div>
         )
     }
