@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles'
-
+import Title from './Title'
 
 class App extends Component{
    state = {displayBio:false};
@@ -17,7 +17,7 @@ class App extends Component{
             <div>
                 <h1>Hello!</h1>
                 <p>My name is Shimona.</p>
-                <p>I'm an Engineer.</p>
+                <Title />
                 {
                     this.state.displayBio ? (
                         <div>
